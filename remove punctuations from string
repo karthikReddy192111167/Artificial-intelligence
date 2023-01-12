@@ -1,0 +1,12 @@
+import string
+def remove_punctuations(text):
+    for c in string.punctuation:
+        text = text.replace(c,"")
+    return text
+
+text = "String! With. Punctuation?"
+print("Original text:")
+print(text)
+result = remove_punctuations(text)
+print("After removing Punctuations from the said string:")
+print(result)
